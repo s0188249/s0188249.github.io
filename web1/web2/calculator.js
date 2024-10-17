@@ -7,9 +7,13 @@ document.getElementById("bCalc").addEventListener("click", function () {
     const quantityPattern = /^[1-9][0-9]*$/;
     if (quantityPattern.test(quantity)) {
         output.textContent = "Общая стоимость: " + totalCost;
-        output.style.cssText = "opacity: 1";
+        output.style.opacity = "1";
+        output.style.backgroundColor = "";
+        output.style.color = "black";
     } else {
         output.textContent = "Введите корректное количество!";
-        output.style.cssText = "opacity: 1; background-color: red";
+        output.style.opacity = "1";
+        output.style.backgroundColor = "red";
+        output.style.color = "white";
     }
 });
