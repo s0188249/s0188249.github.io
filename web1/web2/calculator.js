@@ -13,7 +13,6 @@ document.getElementById("bCalc").addEventListener("click", function () {
     } else {
         output.textContent = "Введите корректное количество!";
         output.style.opacity = "1";
-        output.style.backgroundColor = "red";
-        output.style.color = "white";
+        output.style.color = "black";
     }
 });
