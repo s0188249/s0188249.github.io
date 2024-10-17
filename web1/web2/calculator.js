@@ -1,0 +1,15 @@
+document.getElementById("bCalc").addEventListener("click", function () {
+    const quantity = document.getElementById("itemCount").value;
+    const pricePerUnit = document.getElementById("itemPrice").value;
+    const output = document.getElementById("outputResult");
+    const totalCost = quantity * pricePerUnit;
+
+    const quantityPattern = /^[1-9][0-9]*$/;
+    if (quantityPattern.test(quantity)) {
+        output.textContent = "Общая стоимость: " + totalCost;
+        output.style.cssText = "opacity: 1";
+    } else {
+        output.textContent = "Введите корректное количество!";
+        output.style.cssText = "opacity: 1; background-color: red";
+    }
+});
