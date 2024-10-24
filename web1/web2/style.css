@@ -40,11 +40,11 @@ body {
 }
 
 .slick-prev {
-    left: -35px;
+    left: 10px;
 }
 
 .slick-next {
-    right: -35px;
+    right: 10px;
 }
 
 @media screen and (min-device-width: 800px) {
